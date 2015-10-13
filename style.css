@@ -60,7 +60,7 @@ div.album-options {
 
 
 div.submit {
-  margin-top: 11em;
+  margin-top: 1em;
   text-align: center;
 }
 
@@ -82,66 +82,6 @@ select[id="album-options"] {
 input[type="checkbox"] {
   outline: 2px solid black;
   display: block;
-}
-
-p.checkbox-indie-rock {
-  clear: both;
-  float: none;
-}
-
-p.checkbox-indie-rock input {
-  clear: left;
-  float: left;
-}
-
-p.checkbox-soul {
-  clear: both;
-  float: none;
-}
-
-p.checkbox-soul input {
-  clear: left;
-  float: left;
-}
-
-p.checkbox-singer-songwriter {
-  clear: both;
-  float: none;
-}
-
-p.checkbox-singer-songwriter input {
-  clear: left;
-  float: left;
-}
-
-p.checkbox-jazz {
-  clear: both;
-  float: none;
-}
-
-p.checkbox-jazz input {
-  clear: left;
-  float: left;
-}
-
-p.checkbox-indie-folk {
-  clear: both;
-  float: none;
-}
-
-p.checkbox-indie-folk input {
-  clear: left;
-  float: left;
-}
-
-p.checkbox-trip-hop {
-  clear: both;
-  float: none;
-}
-
-p.checkbox-trip-hop input {
-  clear: left;
-  float: left;
 }
 
 

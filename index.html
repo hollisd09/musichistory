@@ -48,38 +48,19 @@
   </div> 
   
   <!-- These are the checkboxes -->
+  <label for="genre">Genre:</label>
   <div class="genre">
-    <label for="genre">Genre:</label>
-  </div>
-    <p class="checkbox-indie-rock">
-    <input type="checkbox" id="indie-rock" name="indie-rock" value="indie-rock">
-    <label for="indie-rock">Indie Rock</label>
-    </p>
-    
-    <p class="checkbox-soul">  
-    <input type="checkbox" id="soul" name="soul" value="soul">
-    <label for="soul">Soul<label>
-    </p>
-    
-    <p class="checkbox-singer-songwriter">
-    <input type="checkbox" id="singer-songwriter" name="singer-songwriter" value="singer-songwriter">
-    <label for="singer-songwriter">Singer Songwriter</label>
-    </p>
-      
-    <p class="checkbox-jazz">
-    <input type="checkbox" id="jazz" name="jazz" value="jazz">
-      <label for="jazz">Jazz</label>
-      </p>
-      
-    <p class="checkbox-indie-folk">
-    <input type="checkbox" id="indie-folk" name="indie-folk" value="indie-folk">
-    <label for="indie-folk">Indie Folk</label>
-    </p>
-      
-    <p class="checkbox-trip-hop">
-    <input type="checkbox" id="trip-hop" name="trip-hop" value="trip-hop">
-    <label for="trip-hop">Trip Hop</label>
-    </p>
+    <div class="left-three">
+    <span><input type="checkbox" name="indie-rock" value="indie-rock">Indie Rock</span>
+      <span><input type="checkbox" name="soul" value="soul">Soul</span>
+      <span><input type="checkbox" name="jazz" value="jazz">Jazz</span>
+    </div>
+    <div class="right-three">
+      <span><input type="checkbox" name="singer-songwriter" value="singer-songwriter">Singer Songwriter</span>
+      <span><input type="checkbox" name="indie-folk" value="indie-folk">Indie Folk</span>
+      <span><input type="checkbox" name="trip-hop" value="trip-hop">Trip Hop</span>
+    </div>
+ </div>
       
   <div class="submit">
   <input type="submit" value="Filter"></input>
@@ -119,4 +100,11 @@
     <li>Soul</li>
   </ul>
 </div>
+
+<div id="container">
+Hello, my name is Danielle.
+</div>
+
+<script src="script.js"></script>
+
 </body>
