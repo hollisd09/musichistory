@@ -129,18 +129,18 @@ div.right-bar {
   background-color: #FEFAC0;
 }
 
-#right-bar-songs :nth-of-type(2n+0) {
+#right-bar-songs div:nth-of-type(2n+0) {
   background-color: #FFF5EE;
 }
 
-#right-bar-songs :nth-of-type(2n+1) {
+#right-bar-songs div:nth-of-type(2n+1) {
   background-color: #F5FFFA;
 }
 
-#right-bar-songs :first-child {
+/*#right-bar-songs :first-child {
    font-weight: bold; 
 }
-
+*/
 .song-list-item {
   font-family: arial, helvetica, sans-serif;
   font-size: 16px;
