@@ -5,28 +5,43 @@
   <meta charset="utf-8">
   <title>Danielle's Music History</title>
 
-  <link rel="stylesheet" type="text/css" href="songs.css">
+  <link rel="stylesheet" type="text/css" href="songs3.css">
 </head>
 
+
+<body>
+
+<!-- Main page sections -->
+<div id="flex-main-container">
+
 <!-- This is the navigation/header -->
-<header id="navigation">
-  <ul class="navigation">
-    <li><a href="#">View Music</a> | </li>
-    <li><a href="#">Add Music</a> | </li>
+<header id="flex-nav-bar">
+  <ul class="nav-items">
+    <li><a href="#">View Music</a></li>
+    <li> | </li>
+    <li><a href="#">Add Music</a></li>
+    <li> | </li>
     <li><a href="#">Profile</a></li>
   </ul>
 </header>
 
-<body>
+<!-- HIDDEN NAV -->
+<header class="hidden-nav-bar">
+  <ul class="nav-items">
+    <li><a href="#">View Music</a></li>
+    <li> | </li>
+    <li><a href="#">Add Music</a></li>
+    <li> | </li>
+    <li><a href="#">Profile</a></li>
+  </ul>
+</header>
+
 <!-- This is the left sidebar -->
-<div id="left-bar">
-  <div class="song-length">
+<div class="flex-item-left left-bar">
   <label for="song-length">Song length:</label>
   <input class="slider" type="range" name="song-length" min="1" max="10" step="1" value="5">
-  </div>
-  <div class="artist-options">
   <label for="artist-options">Artist:</label>
-  <select id="artist-options" name="artist">
+  <select class="artist-options" name="artist">
     <option>Choose an Artist</option>
     <option>Massive Attack</option>
     <option>The Head and The Heart</option>
@@ -34,10 +49,8 @@
     <option>Gotye</option>
     <option>Amy Winehouse</option>
   </select>
-  </div>
-  <div class="album-options">
   <label for="album-options">Album:</label>
-  <select id="album-options" name="album">
+  <select class="album-options" name="album">
     <option>Choose an Album</option>
     <option>Mezzanine</option>
     <option>The Head and The Heart</option>
@@ -45,31 +58,31 @@
     <option>Making Mirrors</option>
     <option>Back to Black</option>
   </select>
-  </div> 
-  
+
   <!-- These are the checkboxes -->
   <label for="genre">Genre:</label>
-  <div class="genre">
-    <div class="left-three">
+  <div class="genre-select-area">
+    <div class="genre-left">
     <span><input type="checkbox" name="indie-rock" value="indie-rock">Indie Rock</span>
       <span><input type="checkbox" name="soul" value="soul">Soul</span>
       <span><input type="checkbox" name="jazz" value="jazz">Jazz</span>
     </div>
-    <div class="right-three">
+    <div class="genre-right">
       <span><input type="checkbox" name="singer-songwriter" value="singer-songwriter">Singer Songwriter</span>
       <span><input type="checkbox" name="indie-folk" value="indie-folk">Indie Folk</span>
       <span><input type="checkbox" name="trip-hop" value="trip-hop">Trip Hop</span>
     </div>
  </div>
       
+  <!-- This is the submit button -->
   <div class="submit">
   <input type="submit" value="Filter"></input>
   </div>
 </div>
 
 <!-- This is the right sidebar -->
-<div id="right-bar">
-
+<div class="flex-item-right right-bar">
+  <div id="right-bar-songs">
   <!-- <h2>Teardrop</h2>
   <ul id="song-info">
     <li>Massive Attack  | </li>
@@ -100,9 +113,12 @@
     <li>Back to Black |</li>
     <li>Soul</li>
   </ul> -->
-
+  </div>
 </div>
-
-<script src="songs.js"></script>
-
+</div>
+  <footer class="flex-item"></footer>
+<div class="lots-o-space"></div>
+<script src="songs3.js"></script>
 </body>
+</html>
+
