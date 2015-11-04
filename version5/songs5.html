@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Danielle's Music History</title>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link src="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/songs5.css">
+  <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION/HEADER -->
+<div id="main-container">
+  <header id="nav-bar">
+    <ul class="nav-items">
+      <li><a href="#" id="link-list">List Music</a></li>
+      <li><a href="#" id="link-add">Add Music</a></li>
+      <li><a href="#" id="link-profile">Profile</a></li>
+    </ul>
+  </header>
+
+<!-- HIDDEN NAVIGATION/HEADER -->
+  <header class="hidden-nav-bar">
+    <ul class="nav-items">
+      <li><a href="#" id="link-list">List Music</a></li>
+      <li><a href="#" id="link-add">Add Music</a></li>
+      <li><a href="#" id="link-profile">Profile</a></li>
+    </ul>
+  </header>
+
+  <nav><a href="#"></a></nav>
+
+<!-- LEFT SIDEBAR -->
+  <div id="list-container">
+    <div class="left-bar">
+      <label for="song-length">song length:</label>
+      <input class="slider" type="range" name="song-length" min="1" max="10" step="1" value="5">
+
+        <section id="artisto">
+        <label for="artist-options">artist:</label>
+          <select id="artist-options" name="artist">
+            <option>Choose an Artist</option>
+            <option>Massive Attack</option>
+            <option>The Head and The Heart</option>
+            <option>Jose Gonzalez</option>
+            <option>Gotye</option>
+            <option>Amy Winehouse</option>
+          </select>
+        </section>
+        
+        <section id="albumo">
+        <label for="album-options">album:</label>
+          <select id="album-options" name="album">
+            <option id="option"></option>
+          </select>
+        </section>
+
+          <!-- CHECKBOXES -->
+      <section id="genreo">
+      <label for="genre">genre:</label>
+        <div class="genre-select-area">
+        <div class="genre-left">
+              <span><input type="checkbox" name="indie-rock" value="indie-rock">Indie Rock</span>
+              <span><input type="checkbox" name="soul" value="soul">Soul</span>
+              <span><input type="checkbox" name="jazz" value="jazz">Jazz</span>
+        </div>
+        <div class="genre-right">
+              <span><input type="checkbox" name="singer-songwriter" value="singer-songwriter">Singer Songwriter</span>
+              <span><input type="checkbox" name="indie-folk" value="indie-folk">Indie Folk</span>
+              <span><input type="checkbox" name="trip-hop" value="trip-hop">Trip Hop</span>
+          </div>
+      </div>
+      </section>
+<!-- SUBMIT BUTTON -->
+      <div class="submit">
+        <input type="submit" value="Filter"></input>
+      </div>
+    
+     </div>
+  </div>
+
+
+
+
+<!-- RIGHT SIDEBAR -->
+
+
+  <div id="add-container">
+    <div id="list-music">
+    </div>
+    
+    <div id="add-music">
+        <section class="hidden" id="add-view">
+          <input type="text" name="add-section" id="song-title" autofocus="true" placeholder="Enter Song Title">
+          <input type="text" name="add-section" id="artist-name" placeholder="Enter Artist Name">
+          <input type="text" name="add-section" id="album-name" placeholder="Enter Album Name">
+          <button id="add-to-list">Add to List</button>
+        </section>
+    </div>
+  </div>
+
+  <div id="profile-container">
+    <div id="profile">
+      <section class="hidden" id="profile-view"></section>
+    </div>
+  </div>
+
+  <div class="no-wrap">
+  </div>
+
+  <footer class="footer-item">
+  </footer>
+
+  <div class="lots-o-space">
+  </div>
+
+</div>
+
+</body>
+<script src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="javascripts/songs5.js"></script>
+</html>

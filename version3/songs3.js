@@ -38,22 +38,22 @@
 
 // TRY THIS JS WHEN YOU'RE NOT TRYING TO GO CRAZY
 
-output = "";
-var songsElement = document.getElementById("right-bar-songs");
-var song1=["Teardrop", "Massive Attack", "Mezzanine"];
-var song2=["Cats and Dogs", "The Head and The Heart", "The Head and The Heart"];
-var song3=["Leaf Off", "Jose Gonzalez", "Vestiges and Claws"];
-var song4=["Eyes Wide Open", "Gotye", "Making Mirrors"];
-var song5=["Love Is a Losing Game", "Amy Winehouse", "Back to Black"];
+// output = "";
+// var songsElement = document.getElementById("right-bar-songs");
+// var song1=["Teardrop", "Massive Attack", "Mezzanine"];
+// var song2=["Cats and Dogs", "The Head and The Heart", "The Head and The Heart"];
+// var song3=["Leaf Off", "Jose Gonzalez", "Vestiges and Claws"];
+// var song4=["Eyes Wide Open", "Gotye", "Making Mirrors"];
+// var song5=["Love Is a Losing Game", "Amy Winehouse", "Back to Black"];
 
-var songs=[song1, song2, song3, song4, song5];
+// var songs=[song1, song2, song3, song4, song5];
 
-for(i = 0; i < songs.length; i++) {
-	output = output + "<div>" + "<h3>" + songs[i][0] + "</h3>" + "<p>" + songs[i][1] + " | " + songs[i][2] + "</p>" + "</div>";
-	// }
-}
+// for(i = 0; i < songs.length; i++) {
+// 	output = output + "<div>" + "<h3>" + songs[i][0] + "</h3>" + "<p>" + songs[i][1] + " | " + songs[i][2] + "</p>" + "</div>";
+// 	// }
+// }
 
-songsElement.innerHTML = output;
+// songsElement.innerHTML = output;
 
 // for(i = 0; i < songs.length; i++) {
 // 	console.log(songs[i][0]);

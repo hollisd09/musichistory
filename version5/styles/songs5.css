@@ -1,0 +1,198 @@
+/* This is body styling */
+body {
+  width: 1000px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+/* This is overall container styling */
+#main-container {
+  padding: 0;
+  list-style: none;
+  width: 1000px;
+  /*height: 50em;*/
+}
+
+/* This is the start of the header styling */
+#nav-bar {
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  opacity: 0.85;
+}
+
+nav > a {
+  display: block;
+  padding-bottom: .5em;
+  text-decoration: none;
+  color: #500;
+  font-size: 18px;
+  cursor: default;
+  position: fixed;
+}
+
+nav > a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: 5px;
+  width: 200%;
+  background-color: #caa;
+  background-image: linear-gradient(to right, #cc7575, #ffd544, 50%, #cc7575);
+  transition: left .4s ease;
+  cursor: default;
+  position: fixed;
+}
+
+nav > a:hover:after {
+  left: -100%;
+}
+
+.hidden-nav-bar {
+  position: static;
+  visibility: hidden;
+  border: 2px solid white
+}
+
+ul.nav-items li {
+  list-style-type: none;
+  width: 130px;
+  display: inline-block;
+  position: static;
+}
+
+.nav-items {
+  text-align: center;
+}
+
+
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: gray;
+  background-color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 25px;
+}
+
+a:hover {
+  background-color: #ffd544, 50%;
+  color: #cc7575;
+  transition: top .4s ease;
+}
+
+
+
+/* This is the start of left nav bar styling */
+.left-bar {
+  background-color: rgba(128, 128, 128, 0.15);
+  margin-right: 1em;
+  margin-top: 35px;
+  float: left;
+  width: 220px;
+  height: 470px;
+  padding: 8px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+
+input[type="range"] {
+  margin: 1em 0 2em 0;
+  display: block;
+  width: 100%
+}
+
+.artist-options {
+  margin: .5em 0 1.5em 0;
+  border: 2.5px solid black;
+  width: 95%;
+  font-size: 14px;
+  text-align: left;
+}
+
+.album-options {
+  margin: .5em 0 1.5em 0;
+  border: 2.5px solid black;
+  width: 95%;
+  font-size: 14px;
+  text-align: left;
+}
+
+div.genre-select-area {
+  margin: .5em 1em 0 1em;
+  font-size: 12px;
+  width: 150px;
+}
+
+.genre-left > span,
+.genre-right > span {
+  display: block;
+  margin: .5em 0 1em 0;
+}
+
+
+.submit {
+  text-align: center;
+  margin-top: 1em;
+}
+
+input[type="submit"] {
+  width: 100px;
+  margin: .5em auto 1em auto;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #cc7575;
+  outline-style: none ;
+  border-style: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffd544;
+}
+
+input[type="submit"]:active {
+  background-color: #ffd544, 50%;
+}
+
+/* This is the start of right nav bar styling */
+
+#add-container {
+  background-color: rgba(128, 128, 128, 0.15);
+  float: left;
+  width: 700px;
+  height: 470px;
+  margin-top: 35px;
+  padding: 8px;
+}
+
+#list-music {
+  font-size: 10px;
+  margin: 1em;
+}
+
+#add-music {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 10px;
+  margin: 1em;
+  display: none;
+}
+
+/* THIS. IS. FOOTER. */
+#main-container < footer {
+  padding: 10px;
+  width: 100px;
+}
+
+/* THIS. IS. SPACE. */
+.lots-o-space {
+  padding-top: 100em;
+}
+
+/* THIS. IS. HIDDEN. */
