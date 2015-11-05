@@ -173,8 +173,12 @@ input[type="submit"]:active {
 }
 
 #list-music {
-  font-size: 10px;
+  font-size: 18px;
   margin: 1em;
+}
+
+.posted-song {
+  font-size: 18px;
 }
 
 #add-music {

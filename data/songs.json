@@ -1,0 +1,29 @@
+{
+  "songs": [
+    {
+      "title": "Teardrop",
+      "artist": "Massive Attack",
+      "album": "Mezzanine"
+    },
+    {
+      "title": "Cats and Dogs",
+      "artist": "The Head and The Heart",
+      "album": "The Head and The Heart"      
+    },
+    {
+      "title": "Leaf Off",
+      "artist": "Jose Gonzalez",
+      "album": "Vestiges & Claws"      
+    },
+    {
+      "title": "Eyes Wide Open",
+      "artist": "Gotye",
+      "album": "Making Mirrors"
+    },
+    {
+      "title": "Love is a Losing Game",
+      "artist": "Amy Winehouse",
+      "album": "Back to Black"
+    }
+  ]
+}
