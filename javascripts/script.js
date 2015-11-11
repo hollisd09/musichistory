@@ -1,6 +1,6 @@
 define (
-	["jquery", "hbs", "populate-songs", "get-more-songs"],
-	function($, hbs, populate, getMore) {
+	["jquery", "hbs", "populate-songs",],
+	function($, hbs, populate) {
 
 		var mainWindow = $("#list-music");
 		var artistSelect = $("#artist-options");
@@ -52,5 +52,8 @@ define (
 		albumSelect: albumSelect,
 		getSongInfo: getSongInfo
 	};
+
+	$()
+
 
 });

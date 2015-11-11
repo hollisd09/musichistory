@@ -22,6 +22,7 @@ body {
   height: 80px;
   width: 100%;
   opacity: 0.85;
+  margin-top: 20px;
 }
 
 nav > a {
@@ -101,6 +102,7 @@ a:hover {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 100;
   font-size: 1.2em;
+  position: fixed;
 }
 
 input[type="range"] {
@@ -143,33 +145,39 @@ div.genre-select-area {
   margin-top: 1em;
 }
 
-input[type="submit"] {
-  width: 100px;
-  margin: .5em auto 1em auto;
-  border-radius: 5px;
-  font-size: 1em;
-  background-color: #cc7575;
-  outline-style: none ;
-  border-style: none;
-}
-
-input[type="submit"]:hover {
-  background-color: #ffd544;
-}
-
-input[type="submit"]:active {
-  background-color: #ffd544, 50%;
+div.filter {
+  text-align: center;
+  margin-top: 3em;
 }
 
 /* This is the start of right nav bar styling */
 
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.song-artist {
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+}
+
+.song-album {
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+}
+
+div.song-container {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
 #add-container {
-  background-color: rgba(128, 128, 128, 0.15);
   float: left;
   width: 700px;
   height: 470px;
-  margin-top: 35px;
+  margin-top: 10px;
   padding: 8px;
+  margin-left: 280px;
 }
 
 #list-music {
@@ -198,6 +206,75 @@ input[type="submit"]:active {
 .lots-o-space {
   padding-top: 100em;
 }
+
+/* THESE ARE BUTTONS */
+#filter {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 7rem;
+  color: #cc7575;
+  border: 2px solid #cc7575;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: 2;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 1.5rem;
+  font-size: 12px;
+  text-transform: lowercase;
+  outline: none;
+}
+
+.delete-button {
+  overflow: hidden;
+  width: 7rem;
+  color: #cc7575;
+  border: 2px solid #cc7575;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: 2;
+  margin: 0;
+  border-radius: 1.5rem;
+  font-size: 12px;
+  text-transform: lowercase;
+  outline: none;
+}
+
+#add-to-list {
+  position: relative;
+  overflow: hidden;
+  width: 7rem;
+  color: #cc7575;
+  border: 2px solid #cc7575;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: 2;
+  margin: 0;
+  border-radius: 1.5rem;
+  font-size: 12px;
+  text-transform: lowercase;
+  outline: none;
+}
+
+/* THESE ARE INPUT BOXES */
+
+input[type="text"] {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  margin-bottom: 30px;
+}
+
+textarea:focus, input:focus{
+  outline: 0;
+}
+
+
+
 
 /* THIS. IS. HIDDEN. */
 

@@ -1,7 +1,7 @@
 define(
 	["jquery", "script", "populate-songs"],
 	function($, script, populate) {
-		$("#add").click(function() {
+		$("#add-to-list").click(function() {
 			console.log("SOMETHING HAPPENED");
 			var newSong = {
 				"title": $("#song-title").val(),
@@ -10,7 +10,7 @@ define(
 				};
 			console.log(newSong);	
 			$.ajax({
-				url: "https://dchmusic-history.firebaseio.com/.json",
+				url: "https://dchmusic-history.firebaseio.com/songs.json",
 				method: "POST",
 				data: JSON.stringify(newSong)
 			}).done(function(){
