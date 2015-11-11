@@ -7,11 +7,11 @@ define(
 		var filteredArtist = $("#artist-options option:selected").text();
 		console.log("selected artist", filteredArtist);
 		$(".song-artist").each(function() {
-			console.log("THIS", $(this).text().length, filteredArtist.length);
+			// console.log("THIS", $(this).text().length, filteredArtist.length);
 			if ($(this).text() === filteredArtist) {
 				$(this).parents(".song-container").show();
 			} else {
-				console.log("hiding");
+				// console.log("hiding");
 				$(this).parents(".song-container").hide();
 			}
 		});

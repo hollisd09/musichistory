@@ -1,6 +1,6 @@
 define (
 	["jquery", "hbs", "populate-songs",],
-	function($, hbs, populate) {
+	function($, hbs, populateSongs) {
 
 		var mainWindow = $("#list-music");
 		var artistSelect = $("#artist-options");
@@ -15,7 +15,7 @@ define (
 				});
 		};
 				
-		populate.getJsonData(getSongInfo);
+		populateSongs.getJsonData(getSongInfo);
 
 	// CLICK FUNCTIONS TO SHOW AND HIDE PAGES
 	$("#link-add").click(function() {

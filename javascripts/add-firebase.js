@@ -1,6 +1,6 @@
 define(
 	["jquery", "script", "populate-songs"],
-	function($, script, populate) {
+	function($, script, populateSongs) {
 		$("#add-to-list").click(function() {
 			console.log("SOMETHING HAPPENED");
 			var newSong = {
@@ -14,11 +14,13 @@ define(
 				method: "POST",
 				data: JSON.stringify(newSong)
 			}).done(function(){
-				populate.getJsonData(script.getData);
+				populateSongs.getJsonData(script.getData);
 				$("#main-window").show();
 				$("#song-title").val("");
 				$("#artist-name").val("");
 				$("#album-name").val("");
 			});
+
 		});
 });
+			
