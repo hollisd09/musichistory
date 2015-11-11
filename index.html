@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+
+  <body>
+    <!-- START OF MAIN CONTAINER -->
+    <div id="main-container">
+      <!-- NAVIGATION/HEADER -->
+      <header id="nav-bar">
+        <ul class="nav-items">
+          <li><a href="#" id="link-list">List Music</a></li>
+          <li><a href="#" id="link-add">Add Music</a></li>
+          <li><a href="#" id="link-profile">Profile</a></li>
+        </ul>
+      </header>
+      <!-- END OF NAVIGATION/HEADER -->
+
+      <!-- LEFT SIDEBAR -->
+      <div id="list-container">
+        <div class="left-bar">
+          <label for="song-length">song length:</label>
+          <input class="slider" type="range" name="song-length" min="1" max="10" step="1" value="5">
+
+          <!-- ARTIST DROP DOWN -->
+          <section id="artisto">
+            <label for="artist-options">artist:</label>
+            <select id="artist-options" name="artist"></select>
+          </section>
+
+          <!-- ALBUM DROP DOWN -->
+          <section id="albumo">
+            <label for="album-options">album:</label>
+            <select id="album-options" name="album"></select>
+          </section>
+
+          <!-- GENRE CHECKBOXES -->
+          <section id="genreo">
+            <label for="genre">genre:</label>
+            <div class="genre-select-area">
+              <span><input type="checkbox" name="indie-rock" value="indie-rock">Indie Rock</span>
+              <span><input type="checkbox" name="soul" value="soul">Soul</span>
+              <span><input type="checkbox" name="jazz" value="jazz">Jazz</span>
+              <span><input type="checkbox" name="singer-songwriter" value="singer-songwriter">Singer Songwriter</span>
+              <span><input type="checkbox" name="indie-folk" value="indie-folk">Indie Folk</span>
+              <span><input type="checkbox" name="trip-hop" value="trip-hop">Trip Hop</span>
+            </div>
+          </section>
+
+          <!-- FILTER BUTTON -->
+          <div class="filter">
+            <input type="submit" value="Filter">
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div id="add-container">
+        
+        <!-- EMPTY DIV TO APPEND ADDED MUSIC -->
+        <div id="list-music"></div>
+        
+        <!-- DIV THAT CONTAINS INPUT BOXES FOR SONG, ARTIST, AND ALBUM -->
+        <div id="add-music">
+          <section class="hidden" id="add-view">
+            <input type="text" name="add-section" id="song-title" autofocus="true" placeholder="Enter Song Title">
+            <input type="text" name="add-section" id="artist-name" placeholder="Enter Artist Name">
+            <input type="text" name="add-section" id="album-name" placeholder="Enter Album Name">
+            <button id="add-to-list">Add to List</button>
+          </section>
+        </div>
+      </div>
+
+      <!-- PROFILE CONTAINER -->
+      <div id="profile-container">
+        <div id="profile">
+          <section class="hidden" id="profile-view"></section>
+        </div>
+      </div>
+    
+    <!-- END OF MAIN CONTAINER -->
+    </div>
+    <script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
+  </body>
+</html>
