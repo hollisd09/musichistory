@@ -1,6 +1,6 @@
 define (
-	["jquery", "hbs", "populate-songs",],
-	function($, hbs, populateSongs) {
+	["jquery", "hbs", "populate-songs", "bootstrap"],
+	function($, hbs, populateSongs, bootstrap) {
 
 		var mainWindow = $("#list-music");
 		var artistSelect = $("#artist-options");
@@ -40,10 +40,30 @@ define (
 	});
 
 	// DELETE SONGS
-	$(document).on("click", ".delete-button", function(e) {
-		console.log("delete works", e);
-		event.target.parentElement.remove()
-	});
+
+	BootstrapDialog.show({
+            message: 'Are you sure you want to delete this song?',
+            buttons: [{
+                label: 'Yes',
+                cssClass: 'btn-yes',
+                action: $(document).on("click", ".delete-button", function(e) {
+					console.log("delete works", e);
+					event.target.parentElement.remove();
+					})
+            }, {
+                label: 'No',
+                cssClass: 'btn-no',
+                action: function(dialogItself){
+                    dialogItself.close();
+                }
+            }]
+        });
+
+
+	// $(document).on("click", ".delete-button", function(e) {
+	// 	console.log("delete works", e);
+	// 	event.target.parentElement.remove()
+	// });
 
 	// RETURN VARIABLES
 	return {
@@ -53,7 +73,7 @@ define (
 		getSongInfo: getSongInfo
 	};
 
-	$()
+
 
 
 });
